@@ -1,69 +1,50 @@
-# React + TypeScript + Vite
+## 📦 Should I Buy It? / 买？不买？
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> 🤖 An AI-powered sassmaster that tells you whether your purchase is fabulous or foolish — with *attitude*.
+> 🤖 这是一个毒舌 AI 帮你决定「买还是不买」的网站，她说话不好听，但你值得拥有。
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### ✨ Features / 功能亮点
 
-## Expanding the ESLint configuration
+- 💬 Funny, sassy AI replies with attitude  
+- 🌀 Smooth animations via `framer-motion`  
+- 🌈 Delightful gradient UI and playful tone  
+- 🧠 可生成搞笑/讽刺回复，调侃你的购物欲  
+- 🎨 自带渐变配色和动画，使用体验小嗨皮
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 🌐 Live Demo / 在线体验
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+🔗 [should-i-buy-it.vercel.app](https://should-i-buy-it.vercel.app)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+[![Vercel](https://vercelbadge.vercel.app/api/lauranepasdormir/should-i-buy-it)](https://vercel.com/lauranepasdormir/should-i-buy-it)
+
+---
+
+
+### 🛠 Tech Stack / 技术栈
+
+- React + TypeScript  
+- Tailwind CSS  
+- Framer Motion  
+- OpenAI API  
+- Vercel Hosting
+
+---
+
+### 📦 Setup Locally / 本地运行
+
+```bash
+git clone https://github.com/lauranepasdormir/should-i-buy-it.git
+cd should-i-buy-it
+npm install
+touch .env
+# Add your VITE_OPENAI_API_KEY to .env
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+> *AI 姐说的话仅代表态度，不代表理智。*
